@@ -1,0 +1,21 @@
+;-------------------------------------------------
+;フォルダを作成して、配下にログを出力 Panel用
+;-------------------------------------------------
+
+;ログを出力するフォルダを指定。この配下に月別フォルダを自動生成します
+LOG_FILE = 'C:\Log'
+
+;フォルダ名定義
+gettime YM "%Y%m"
+strconcat LOG_FILE '\'
+strconcat LOG_FILE YM
+
+;フォルダ作成実行
+;すでにフォルダがあってもコマンドが発行されますが、問題はありません
+EXECMD = 'cmd /c md '
+strconcat EXECMD LOG_FILE
+exec EXECMD
+
+;ログ取得開始
+logopen LOG_FILE 0 1
+
