@@ -1,0 +1,27 @@
+--------------------ç\ê¨: pipedump - Win32 Release--------------------
+Begining build with project "C:\src\USB\uusbd\uusbdV11\PIPEDUMP\pipedump.dsp", at root.
+Active configuration is Win32 (x86) Console Application (based on Win32 (x86) Console Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/pipedump.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c "
+			"Win32 Resource Compiler" with flags "/l 0x411 /d "NDEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"Release/pipedump.bsc" "
+			"COFF Linker for 80x86" with flags "kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/pipedump.pdb" /machine:I386 /out:"Release/pipedump.exe" "
+			"∂Ω¿— ÀﬁŸƒﬁ" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "C:\WINDOWS\TEMP\RSP42A1.TMP" with contents </nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/pipedump.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\src\USB\uusbd\uusbdV11\PIPEDUMP\pipedump.c"
+>
+Creating command line "xicl5.exe @C:\WINDOWS\TEMP\RSP42A1.TMP" 
+Creating temp file "C:\WINDOWS\TEMP\RSP42A2.TMP" with contents <kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/pipedump.pdb" /machine:I386 /out:"Release/pipedump.exe" 
+.\Release\pipedump.obj
+..\lib\uusbd.lib>
+Creating command line "xilink5.exe @C:\WINDOWS\TEMP\RSP42A2.TMP" 
+∫› ﬂ≤ŸíÜ...
+pipedump.c
+ÿ›∏íÜ...
+
+
+
+pipedump.exe - ¥◊∞ 0ÅAåxçê 0

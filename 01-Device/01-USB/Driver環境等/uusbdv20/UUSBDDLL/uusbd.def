@@ -1,0 +1,21 @@
+
+DESCRIPTION "uusbd dll"
+
+EXPORTS 
+
+Uusbd_Open_mask		@1
+Uusbd_Open		@2
+Uusbd_Close		@3
+Uusbd_OpenPipe		@4
+Uusbd_ClassRequest	@5
+Uusbd_VendorRequest	@6
+Uusbd_Check			@7 
+Uusbd_ResetPipe		@8
+Uusbd_ResetDevice	@9
+Uusbd_GetDeviceDescriptor			@10
+Uusbd_GetConfigurationDescriptor	@11
+Uusbd_GetStatusEndpoint				@12
+Uusbd_OpenPipe_Overlapped			@13
+Uusbd_AbortPipe		@14
+Uusbd_GetOtherSpeedConfigurationDescriptor @15
+Uusbd_GetDeviceQualifierDescriptor @16

@@ -1,0 +1,33 @@
+﻿2019/02/01 17:49:45 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "D:\GitHub\trunk\01-Device\01-USB\Driver環境等\uusbdv20\PIPEDUMP\pipedump.vcxproj" (build ターゲット)。
+     1>InitializeBuildStatus:
+         "AlwaysCreate" が指定されたため ".\Debug\pipedump.unsuccessfulbuild" を作成しています。
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\opencv\build\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt pipedump.c
+         pipedump.c
+     1>d:\github\trunk\01-device\01-usb\driver環境等\uusbdv20\pipedump\pipedump.c(60): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 'sprintf' の宣言を確認してください。
+     1>d:\github\trunk\01-device\01-usb\driver環境等\uusbdv20\pipedump\pipedump.c(69): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 'sprintf' の宣言を確認してください。
+     1>d:\github\trunk\01-device\01-usb\driver環境等\uusbdv20\pipedump\pipedump.c(78): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 'sprintf' の宣言を確認してください。
+       ManifestResourceCompile:
+         すべての出力が最新のものです。
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\pipedump.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\opencv\build\x86\vc10\lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\Debug\pipedump.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\GitHub\trunk\01-Device\01-USB\Driver環境等\uusbdv20\PIPEDUMP\Debug\pipedump.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\pipedump.lib" /MACHINE:X86 .\Debug\pipedump.exe.embed.manifest.res
+         .\Debug\pipedump.obj
+         ..\lib\uusbd.lib
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:".\Debug\pipedump.exe.embed.manifest" /manifest .\Debug\pipedump.exe.intermediate.manifest
+         すべての出力が最新のものです。
+       LinkEmbedManifest:
+         すべての出力が最新のものです。
+         pipedump.vcxproj -> D:\GitHub\trunk\01-Device\01-USB\Driver環境等\uusbdv20\PIPEDUMP\.\Debug\pipedump.exe
+       FinalizeBuildStatus:
+         ファイル ".\Debug\pipedump.unsuccessfulbuild" を削除しています。
+         ".\Debug\pipedump.lastbuildstate" のタッチ タスクを実行しています。
+     1>プロジェクト "D:\GitHub\trunk\01-Device\01-USB\Driver環境等\uusbdv20\PIPEDUMP\pipedump.vcxproj" (build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:00.86

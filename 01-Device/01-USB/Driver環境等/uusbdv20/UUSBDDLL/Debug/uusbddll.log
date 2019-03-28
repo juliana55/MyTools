@@ -1,0 +1,23 @@
+﻿2019/02/01 18:21:35 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "D:\GitHub\trunk\01-Device\01-USB\Driver環境等\uusbdv20\UUSBDDLL\uusbddll.vcxproj" (rebuild ターゲット)。
+     1>InitializeBuildStatus:
+         "AlwaysCreate" が指定されたため ".\Debug\uusbddll.unsuccessfulbuild" を作成しています。
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\NTDDK\inc /IC:\opencv\build\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _WINDLL /Gm /EHsc /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ioctl.c setup.c uusbd.c uusbddll.c
+         uusbddll.c
+     1>d:\github\trunk\01-device\01-usb\driver環境等\uusbdv20\uusbddll\uusbddll.c(74): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' の宣言を確認してください。
+     1>d:\github\trunk\01-device\01-usb\driver環境等\uusbdv20\uusbddll\uusbddll.c(105): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 'sprintf' の宣言を確認してください。
+         uusbd.c
+         setup.c
+     1>d:\github\trunk\01-device\01-usb\driver環境等\uusbdv20\uusbddll\setup.c(75): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 'strcpy' の宣言を確認してください。
+         ioctl.c
+     1>d:\github\trunk\01-device\01-usb\driver環境等\uusbdv20\uusbddll\ioctl.c(4): fatal error C1083: include ファイルを開けません。'devioctl.h': No such file or directory
+         コードを生成中...
+     1>プロジェクト "D:\GitHub\trunk\01-Device\01-USB\Driver環境等\uusbdv20\UUSBDDLL\uusbddll.vcxproj" (rebuild ターゲット) のビルドが終了しました -- 失敗。
+
+ビルドに失敗しました。
+
+経過時間 00:00:01.79

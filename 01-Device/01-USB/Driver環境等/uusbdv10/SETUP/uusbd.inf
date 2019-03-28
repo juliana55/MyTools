@@ -1,0 +1,88 @@
+;
+; Uusbd setup INF file ver 1.0
+;	                           kasiwano masahiro
+;
+;
+;
+[Version]
+Signature="$CHICAGO$"
+Class=UUSBD
+ClassGUID={69910468-8802-11d3-ABC7-A756B2FDFB29}
+provider=%KASHIWANO%
+DriverVer=01/17/2000,1.0.0.1 
+
+[ClassInstall]
+Addreg=USBClassReg
+
+[ClassInstall32]
+Addreg=USBClassReg
+
+[USBClassReg]
+HKR,,,,%UUSBDClassName%
+HKR,,Icon,,-20
+
+[Manufacturer]
+%MfgName%=Kashiwano
+
+[Kashiwano]
+;新しいデバイスを追加する場合はこの下に追加するデバイスの
+;Vendor ID,Product IDを調べ例にならって記述する。複数行記述可。
+;これに対応して[Strings]セクションも変更すること
+;
+;例
+;   %USB\VID_0627&PID_0002.DeviceDesc%=UUSBD.Dev, USB\VID_0627&PID_0002
+;            ~~~~     ~~~~                                ~~~~     ~~~~
+%USB\VID_0627&PID_0002.DeviceDesc%=UUSBD.Dev, USB\VID_0627&PID_0002
+;%USB\CLASS_03.DeviceDesc%=USBD.Dev, USB\CLASS_03
+
+[PreCopySection]
+HKR,,NoSetupUI,,1
+
+[DestinationDirs]
+UUSBD.Files.Ext = 10,System32\Drivers
+UUSBD.Files.Inf = 10,INF
+
+[UUSBD.Dev]
+CopyFiles=UUSBD.Files.Ext, UUSBD.Files.Inf
+AddReg=UUSBD.AddReg
+
+[UUSBD.Dev.NT]
+CopyFiles=UUSBD.Files.Ext, UUSBD.Files.Inf
+AddReg=UUSBD.AddReg
+
+[UUSBD.Dev.NT.Services]
+Addservice = UUSBD, 0x00000002, UUSBD.AddService
+
+[UUSBD.AddService]
+DisplayName    = %UUSBD.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 2                  ; SERVICE_AUTO_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\uusbd.sys
+LoadOrderGroup = Base
+
+[UUSBD.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,uusbd.sys
+
+[UUSBD.Files.Ext]
+uusbd.sys
+
+[UUSBD.Files.Inf]
+uusbd.Inf
+
+;---------------------------------------------------------------;
+
+[Strings]
+KASHIWANO="Kashiwano"
+MfgName="Kashiwano soft"
+UUSBD.SvcDesc="Universal USB Driver"
+UUSBDClassName="UUSBD用USBデバイス"
+
+;
+;デバイスを追加したら、ここにそのデバイスの名前を記述すること
+;例
+; USB\VID_0627&PID_0002.DeviceDesc="Universal USB Driver (Mouse)"
+;
+USB\VID_0627&PID_0002.DeviceDesc="Universal USB Driver (Mouse)"
+  

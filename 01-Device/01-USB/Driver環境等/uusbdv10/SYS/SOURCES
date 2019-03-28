@@ -1,0 +1,17 @@
+TARGETNAME=uusbd
+TARGETTYPE=DRIVER
+TARGETPATH=obj
+DRIVERTYPE=WDM
+USE_MAPSYM=1
+
+TARGETLIBS=$(DDK_LIB_PATH)\usbd.lib
+
+SOURCES= \
+		uusbd.rc \
+		BusbDbg.c \
+		uusbdmain.c  \
+		uusbdPnP.c \
+		uusbdPwr.c \
+		uusbdioctl.c \
+		uusbdcrw.c
+

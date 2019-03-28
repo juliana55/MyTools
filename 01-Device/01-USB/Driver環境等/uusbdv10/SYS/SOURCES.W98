@@ -1,0 +1,24 @@
+TARGETNAME=uusbd
+TARGETTYPE=DRIVER
+TARGETPATH=$(BASEDIR)\LIB
+DRIVERTYPE=WDM
+USE_MAPSYM=1
+NTDEBUG=sym
+
+INCLUDES=$(BASEDIR)\inc; \
+		 $(BASEDIR)\src\usb\inc; \
+		 $(BASEDIR)\src\wdm\usb\inc; \
+          ..\..\inc
+
+
+TARGETLIBS=$(BASEDIR)\lib\*\free\usbd.lib
+
+SOURCES= \
+		uusbd.rc \
+		BusbDbg.c \
+		uusbdmain.c  \
+		uusbdPnP.c \
+		uusbdPwr.c \
+		uusbdioctl.c \
+		uusbdcrw.c
+
