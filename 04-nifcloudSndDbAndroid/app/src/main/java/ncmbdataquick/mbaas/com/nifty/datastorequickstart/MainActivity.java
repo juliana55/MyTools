@@ -57,12 +57,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void doStartDemo(View view) {
         final NCMBObject obj = new NCMBObject("TestClass");
-        try {
+        try
+        {
             obj.put("message", "Hello, NCMB!");
-            obj.saveInBackground(new DoneCallback() {
+            obj.saveInBackground(new DoneCallback()
+            {
                 @Override
-                public void done(NCMBException e) {
-                    if (e != null) {
+                public void done(NCMBException e)
+                {
+                    if (e != null)
+                    {
                         //保存失敗
                         new AlertDialog.Builder(MainActivity.this)
                                 .setTitle("Notification from NIFCLOUD")
@@ -70,7 +74,9 @@ public class MainActivity extends AppCompatActivity {
                                 .setPositiveButton("OK", null)
                                 .show();
 
-                    } else {
+                    }
+                    else
+                     {
                         //保存成功
                         new AlertDialog.Builder(MainActivity.this)
                                 .setTitle("Notification from NIFCLOUD")
@@ -80,8 +86,11 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 }
-            });
-        } catch (NCMBException e) {
+            }
+            );
+        }
+        catch (NCMBException e)
+        {
             e.printStackTrace();
         }
 
