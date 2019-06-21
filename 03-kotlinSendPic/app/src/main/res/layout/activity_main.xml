@@ -25,12 +25,12 @@
         android:textSize="20dp" />
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="240dp"
         android:layout_height="240dp"
-        android:id="@+id/imageView"
-        android:src="@drawable/abc"
         android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/abc" />
 
     <Button
         android:layout_width="wrap_content"
