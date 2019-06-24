@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         //**************** APIキーの設定とSDKの初期化 **********************
-        NCMB.initialize(this, "c229cea695ec78ddfe6a5eb5cd69f11318db14f05d7dc990ac7b8d3408497579", "a51818098d824662b6723bdf86dbce3963dc47abf64796c234dad321dcdacf48");
+        NCMB.initialize(this, "YOUR_APPLICATION_KEY", "YOUR_CLIENT_KEY");
 
         setContentView(R.layout.activity_main)
 
