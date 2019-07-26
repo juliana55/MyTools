@@ -1,0 +1,25 @@
+//
+//	Copyright (c) 2019. by JUKI Corporation.
+//
+/*
+	@file	svninfo.h
+
+	Module:Panel
+	$Author: j $
+	$Revision: 0 $
+	$URL: 0 $
+	$Date: 0 $
+*/
+ 
+#ifndef __PG_CODE_REVISION_H__
+#define __PG_CODE_REVISION_H__
+ 
+#define CURRENT_SVN_REVISION_STR "$WCREV$"
+#define CURRENT_SVN_BUILT_TIME_STR "$WCNOW$"
+#define CURRENT_SVN_REVISION_RANGE "$WCRANGE$"
+#define CURRENT_SVN_HAVE_CHANGED "$WCMODS?TText:FText$"
+#define CURRENT_SVN_EXT_FIXED "$WCEXTALLFIXED?TText:FText$"
+#define CURRENT_PC_USER_NAME "username"
+ 
+#endif // __PG_CODE_REVISION_H__
+ 
